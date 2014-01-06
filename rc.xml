@@ -228,13 +228,14 @@
         <wrap>no</wrap>
       </action>
     </keybind>
-		<keybind key="C-W-S-Down">
-      <action name="UnmaximizeFull"/>
-    </keybind>
+    <!-- Window Moving/Resizing Behavior -->
     <keybind key="C-W-S-Up">
       <action name="MaximizeFull"/>
     </keybind>
-		<keybind key="C-W-S-Left">
+    <keybind key="C-W-S-Down">
+      <action name="UnmaximizeFull"/>
+    </keybind>
+    <keybind key="C-W-S-Left">
       <action name="UnmaximizeFull"/>
       <action name="MaximizeVert"/>
       <action name="MoveResizeTo">
@@ -250,7 +251,19 @@
       </action>
       <action name="MoveToEdgeEast"/>
     </keybind>
-<!--end pjt-->
+    <keybind key="C-W-Up">
+      <action name="MoveToEdgeNorth"/>
+    </keybind>
+    <keybind key="C-W-Down">
+      <action name="MoveToEdgeSouth"/>
+    </keybind>
+    <keybind key="C-W-Left">
+      <action name="MoveToEdgeWest"/>
+    </keybind>
+    <keybind key="C-W-Right">
+      <action name="MoveToEdgeEast"/>
+    </keybind>
+    <!--end pjt-->
     <keybind key="W-F1">
       <action name="GoToDesktop">
         <to>1</to>
@@ -356,10 +369,19 @@
       </action>
     </keybind>
 <!--pjt-->
-    <!-- Launch Terminator -->
+    <keybind key="C-A-l">
+      <action name="Execute">
+        <command>slock</command>
+      </action>
+    </keybind>
     <keybind key="C-A-t">
       <action name="Execute">
         <command>terminator</command>
+      </action>
+    </keybind>
+    <keybind key="C-A-e">
+      <action name="Execute">
+        <command>emacs24</command>
       </action>
     </keybind>
     <!-- Launch Synapse -->
@@ -383,6 +405,32 @@
         <command>pcmanfm</command>
       </action>
     </keybind>
+
+	<!-- http://crunchbang.org/forums/viewtopic.php?id=5114 -->
+	<!-- Keybindings for Media Keys -->
+    <keybind key="XF86AudioMute">
+      <action name="Execute">
+        <command>amixer set Master toggle</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioLowerVolume">
+      <action name="Execute">
+        <command>amixer set Master 2dB- unmute</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioRaiseVolume">
+      <action name="Execute">
+        <command>amixer set Master 2dB+ unmute</command>
+      </action>
+    </keybind>f
+
+    <keybind key="">
+      <action name="execute">
+        <command>pcmanfm</command>
+      </action>
+    </keybind>
+
+
 
 <!--end pjt-->
     <!-- Launch gnome-screenshot when Print is pressed -->

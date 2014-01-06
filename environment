@@ -1,0 +1,4 @@
+# Make the admintodo function available to gmrun
+
+#function admintodo () { echo "$@" >> ~/SystemAdministration/TODO.txt; }
+#export -f admintodo

@@ -369,17 +369,39 @@
       </action>
     </keybind>
 <!--pjt-->
+
+	<keybind key="C-Escape">
+
+    <keybind key="Delete">
+    	<keybind key="End">
+      	<action name="Execute">
+        	<command>sudo halt -p now</command>
+      	</action>
+    	</keybind>
+		</keybind>
+
+		<keybind key="End">
+    	<keybind key="Delete">
+      	<action name="Execute">
+        	<command>sudo halt -p now</command>
+      	</action>
+    	</keybind>
+		</keybind>
+	</keybind>
+
+
     <keybind key="C-A-l">
       <action name="Execute">
         <command>slock</command>
       </action>
     </keybind>
+
     <keybind key="C-A-t">
       <action name="Execute">
         <command>terminator</command>
       </action>
     </keybind>
-    <keybind key="C-A-e">
+		<keybind key="C-A-e">
       <action name="Execute">
         <command>emacs24</command>
       </action>

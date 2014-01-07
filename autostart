@@ -1,6 +1,13 @@
 xcompmgr &
+
 tint2 &
+
 volwheel &
+
 feh --bg-scale Pictures/sea__moon_at_mid_night-wide.jpg
+
 /home/paul/SystemAdministration/2X2_WorkspaceGrid/setlayout.sh &
 
+xautolock -time 15 -locker slock &
+
+synclient HorizTwoFingerScroll=1 &

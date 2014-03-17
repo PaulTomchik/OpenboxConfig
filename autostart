@@ -1,13 +1,19 @@
 xcompmgr &
 
-tint2 &
+(sleep 1s && volwheel) &
 
-volwheel &
+(sleep 1s && feh --bg-scale Pictures/nightmountain.jpg) &
 
-feh --bg-scale Pictures/sea__moon_at_mid_night-wide.jpg
+(sleep 1s && /home/paul/SystemAdministration/2X2_WorkspaceGrid/setlayout.sh) &
 
-/home/paul/SystemAdministration/2X2_WorkspaceGrid/setlayout.sh &
+(sleep 1s && autolock -time 15 -locker slock) &
 
-xautolock -time 15 -locker slock &
+(sleep 1s && synclient HorizTwoFingerScroll=1) &
 
-synclient HorizTwoFingerScroll=1 &
+(sleep 1s && xfce4-power-manager) &
+
+(sleep 1s && unclutter) &
+
+(sleep 1s && guake) &
+
+(sleep 3s && tint2) &

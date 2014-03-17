@@ -203,7 +203,27 @@
         <wrap>no</wrap>
       </action>
     </keybind>
+
+	<keybind key="C-Escape">
+		<keybind key="Delete">
+			<keybind key="End">
+				<action name="execute">
+					<command>sudo shutdown -h now</command>
+					<!--<command>touch /home/paul/temp/shutdownoutput</command>-->
+      	</action>
+				</keybind>
+    </keybind>
+		<keybind key="End">	
+			<keybind key="Delete">	
+      	<action name="execute">
+        	<command>sudo shutdown -r now</command>
+      	</action>
+			</keybind>
+    </keybind>
+	</keybind>
+
 <!--pjt-->
+
     <keybind key="C-A-S-Left">
       <action name="SendToDesktop">
         <to>left</to>
@@ -368,27 +388,11 @@
         <command>kfmclient openProfile filemanagement</command>
       </action>
     </keybind>
+
 <!--pjt-->
-
-	<keybind key="C-Escape">
-
-    <keybind key="Delete">
-    	<keybind key="End">
-      	<action name="Execute">
-        	<command>sudo halt -p now</command>
-      	</action>
-    	</keybind>
-		</keybind>
-
-		<keybind key="End">
-    	<keybind key="Delete">
-      	<action name="Execute">
-        	<command>sudo halt -p now</command>
-      	</action>
-    	</keybind>
-		</keybind>
-	</keybind>
-
+		<keybind key="C-S-6">
+			<action name="ToggleAlwaysOnTop"/>
+		</keybind> 
 
     <keybind key="C-A-l">
       <action name="Execute">
@@ -451,10 +455,9 @@
         <command>pcmanfm</command>
       </action>
     </keybind>
-
-
-
 <!--end pjt-->
+
+
     <!-- Launch gnome-screenshot when Print is pressed -->
     <keybind key="Print">
       <action name="Execute">

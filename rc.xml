@@ -405,9 +405,14 @@
         <command>terminator</command>
       </action>
     </keybind>
+		<keybind key="C-A-v">
+      <action name="Execute">
+        <command>gvim</command>
+      </action>
+    </keybind>
 		<keybind key="C-A-e">
       <action name="Execute">
-        <command>emacs24</command>
+				<command>/home/paul/DevTech/IDEs/Eclipse/kepler/eclipse/eclipse</command>
       </action>
     </keybind>
     <!-- Launch Synapse -->

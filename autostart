@@ -1,8 +1,8 @@
 xcompmgr &
 
-(sleep 1s && volwheel) &
+feh --bg-scale Pictures/nightmountain.jpg &
 
-(sleep 1s && feh --bg-scale Pictures/nightmountain.jpg) &
+(sleep 1s && volwheel) &
 
 (sleep 1s && /home/paul/SystemAdministration/2X2_WorkspaceGrid/setlayout.sh) &
 
@@ -16,4 +16,5 @@ xcompmgr &
 
 (sleep 1s && guake) &
 
-(sleep 3s && tint2) &
+(sleep 3s && xfce4-panel) &
+

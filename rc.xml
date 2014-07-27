@@ -400,6 +400,11 @@
       </action>
     </keybind>
 
+    <keybind key="C-A-m">
+      <action name="Execute">
+        <command>thunderbird</command>
+      </action>
+    </keybind>
     <keybind key="C-A-t">
       <action name="Execute">
         <command>terminator</command>

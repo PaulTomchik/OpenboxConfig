@@ -1,11 +1,12 @@
 xcompmgr &
 
-feh --bg-scale Pictures/nightmountain.jpg &
+feh --bg-scale ~/Pictures/australia-ocean-coast-coast-rocks-lilac-night-sunset-sky-clouds.jpg &
 
-(sleep 1s && volwheel) &
+# (sleep 1s && volwheel) &
 
-(sleep 1s && /home/paul/SystemAdministration/2X2_WorkspaceGrid/setlayout.sh) &
+(sleep 1s && /home/paul/.config/openbox/2x2WorkspaceGrid/setlayout 0 2 2 0) &
 
+# sudo apt-get install suckless-tools
 (sleep 1s && autolock -time 15 -locker slock) &
 
 (sleep 1s && synclient HorizTwoFingerScroll=1) &
@@ -17,4 +18,5 @@ feh --bg-scale Pictures/nightmountain.jpg &
 (sleep 1s && guake) &
 
 (sleep 3s && xfce4-panel) &
+
 

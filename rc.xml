@@ -396,7 +396,7 @@
 
     <keybind key="C-A-l">
       <action name="Execute">
-        <command>slock</command>
+        <command>/home/paul/.config/openbox/lockscreen.sh</command>
       </action>
     </keybind>
 

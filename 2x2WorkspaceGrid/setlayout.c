@@ -1,4 +1,5 @@
-/* To compile this program, run
+/* From: http://openbox.org/dist/tools/setlayout.c
+ * To compile this program, run
  * gcc -o setlayout setlayout.c -lX11
  */
 #include <stdio.h>

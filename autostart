@@ -1,6 +1,6 @@
-xcompmgr &
-
 feh --bg-scale ~/Pictures/australia-ocean-coast-coast-rocks-lilac-night-sunset-sky-clouds.jpg &
+
+xcompmgr &
 
 # (sleep 1s && volwheel) &
 
